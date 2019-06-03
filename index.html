@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Резюме Александры Боблак</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,700,700i|Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -11,7 +12,7 @@
             <img class="paxful-logo" width="155" height="29" alt="Логотип компании Paxful" src="img\paxful-logo.svg">
         </a>
         <nav>
-            <ul class="page-navigation">
+            <ul class="page-navigation-list list">
                 <li class="page-navigation-item"><a href="#personal-info">Контактная информация</a></li>
                 <li class="page-navigation-item"><a href="#education">Образование</a></li>
                 <li class="page-navigation-item"><a href="#certificates">Сертификаты</a></li>
@@ -25,59 +26,79 @@
             <h2 class="visually-hidden">Контактная информация</h2>
             <img class="cv-photo" width="400" height="478" alt="Логотип компании Paxful" src="img\cv-photo.jpg">
             <h3 class="candidate-name">Александра Боблак</h3>
-            <p>HTML/CSS Coder</p>
-            <p><a href="tel:+37256703073">+372 5670 3073</a></p>
-            <p><a href="mailto:boblak.aleksandra@gmail.com">boblak.aleksandra@gmail.com</a></p>
+            <p class="em">HTML/CSS Coder</p>
+            <p class="candidate-contacts"><a class="link" href="tel:+37256703073">+372 5670 3073</a></p>
+            <p class="candidate-contacts"><a class="link" href="mailto:boblak.aleksandra@gmail.com">boblak.aleksandra@gmail.com</a></p>
         </section>
         <section class="education" id="education">
             <h2>Образование</h2>
-            <ul class="education-list">
+            <ul class="education-list list">
                 <li class="education-item">
-                    <p class="graduation-year">2016</p>
+                    <p class="year em">2016</p>
                     <div class="education-info">
-                        <h3 class="education-center">Санкт-Петербургский государственный университет</h3>
-                        <p class="education-program">Филологический факультет, Лингвистика и межкультурная коммуникация (английский язык)</p>
+                        <h3 class="education-center em">Санкт-Петербургский государственный университет</h3>
+                        <p class="description">Филологический факультет, Лингвистика и межкультурная коммуникация (английский язык)</p>
                     </div>
                 </li>
                 <li class="education-item">
-                    <p class="graduation-year"></p>
+                    <p class="year em">2018</p>
                     <div class="education-info">
-                        <h3 class="education-center">Санкт-Петербургский государственный университет</h3>
-                        <p class="education-program">Филологический факультет, Синхронный перевод (английский язык)</p>
+                        <h3 class="education-center em">Санкт-Петербургский государственный университет</h3>
+                        <p class="description">Филологический факультет, Синхронный перевод (английский язык)</p>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="certificates" id="certificates">
             <h2>Сертификаты</h2>
-            <ul class="certificate-list">
+            <ul class="certificate-list list">
                 <li class="certificate-item">
-                    <p class="certificate-year">2016</p>
+                    <p class="year em">2016</p>
                     <div class="certificate-info">
-                        <a href="doc\IELTS_certificate.jpg" target="_blank" rel="noopener">
-                            <h3 class="certificate-title">IELTS Academic</h3>
+                        <a class="link" href="doc\IELTS_certificate.jpg" target="_blank" rel="noopener">
+                            <h3 class="em">IELTS Academic</h3>
                         </a>
-                        <p class="certificate-organization">Cambridge English Teaching Qualifications — LT-PRO</p>
-                        <p class="certificate-level">Уровень английского C1</p>
+                        <p class="description">Cambridge English Teaching Qualifications — LT-PRO</p>
+                        <p class="certificate-level description">Уровень английского C1</p>
                     </div>
                 </li>
                 <li class="certificate-item">
-                    <p class="certificate-year">2019</p>
+                    <p class="year em">2019</p>
                     <div class="certificate-info">
-                        <a href="doc\HTML Academy Certificate.pdf" target="_blank" rel="noopener">
-                            <h3 class="certificate-title">HTML & CSS, уровень 1</h3>
+                        <a class="link" href="doc\HTML Academy Certificate.pdf" target="_blank" rel="noopener">
+                            <h3 class="em">HTML & CSS, уровень 1</h3>
                         </a>
-                        <p class="certificate-organization">HTML Academy</p>
-                        <p class="certificate-level">Успешная защита проекта (100%)</p>
+                        <p class="description">HTML Academy</p>
+                        <p class="certificate-level description">Успешная защита проекта (100%)</p>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="experience" id="experience">
             <h2>Опыт работы</h2>
-            <p>Здесь могла быть Ваша компания</p>
+            <p class="description">Здесь могла быть Ваша компания</p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="contacts">
+            <h2>Для связи</h2>
+            <p class="candidate-contacts"><a class="link" href="tel:+37256703073">+372 5670 3073</a></p>
+            <p class="candidate-contacts"><a class="link" href="mailto:boblak.aleksandra@gmail.com">boblak.aleksandra@gmail.com</a></p>
+        </section>
+        <section class="socials">
+            <h2>Подписывайтесь</h2>
+            <ul class="socials-list list">
+                <li class="socials-item">
+                    <a href="https://vk.com/alexandraboblak" class="link" target="_blank" rel="noopener">Вконтакте</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://www.facebook.com/alexandra.boblak" class="link" target="_blank" rel="noopener">Фейсбук</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://www.instagram.com/aleksandra_boblak/" class="link" target="_blank" rel="noopener">Инстаграм</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>
