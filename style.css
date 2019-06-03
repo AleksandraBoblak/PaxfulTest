@@ -33,6 +33,8 @@ h1, h2 {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .page-navigation-item a {
@@ -42,6 +44,7 @@ h1, h2 {
     line-height: 1rem;
     color: #000000;
     opacity: 0.5;
+    transition: opacity 200ms;
 }
 
 .page-navigation-item a:hover,
@@ -60,6 +63,14 @@ h2,
     line-height: 3.5rem;
 }
 
+h2 {
+    text-align: center;
+}
+
+h3:first-child {
+    margin-top: 0;
+}
+
 .em {
     font-weight: 600;
     font-size: 1.375rem;
@@ -73,8 +84,10 @@ h2,
 }
 
 .link {
+    display: block;
     color: #00b4e8;
     cursor: pointer;
+    transition: opacity 200ms;
 }
 
 .link:hover,
@@ -98,6 +111,7 @@ h2,
 
 .year {
     color: #00b4e8;
+    margin-top: 0;
 }
 
 footer h2 {
@@ -105,6 +119,7 @@ footer h2 {
     color: #212121;
     font-size: 1.125rem;
     line-height: 1.375rem;
+    text-align: left;
 }
 
 footer .candidate-contacts a {
@@ -115,4 +130,160 @@ footer .candidate-contacts a {
 .socials-list {
     font-weight: 600;
     font-size: 0.875rem;
+}
+
+.socials-item {
+    display: block;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    border-bottom: 2px solid #d8d8d8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #ffffff;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.page-navigation-list {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-navigation-item {
+    flex-grow: 1;
+}
+
+main.container {
+    margin: 80px auto 0px;
+    padding: 80px 105px 0;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+.personal-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.personal-info-column.column-1 {
+    margin-right: 40px;
+}
+
+.personal-info-column.column-2 {
+    flex-grow: 1;
+}
+
+.education-item,
+.certificate-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.year {
+    margin-right: 40px;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    margin-right: 40px;
+    flex-grow: 1;
+}
+
+.socials-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socials-item {
+    margin-right: 20px;
+}
+
+.socials {
+    flex-grow: 1;
+}
+
+.fb-social::before {
+    display: block;
+    content: "";
+    top: 14px;
+    left: 8px;
+    width: 21px;
+    height: 24px;
+    background-image: url(img/facebook-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+.vk-social::before {
+    display: block;
+    content: "";
+    top: 14px;
+    left: 8px;
+    width: 22px;
+    height: 24px;
+    background-image: url(img/vk-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+.ig-social::before {
+    display: block;
+    content: "";
+    top: 14px;
+    left: 8px;
+    width: 22px;
+    height: 24px;
+    background-image: url(img/instagram-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+.socials-item a {
+    display: block;
+    transition: filter 200ms;
+}
+
+.socials-item a:hover,
+.socials-item a:focus {
+    filter: brightness(0.4);
+}
+
+.socials-item a:active {
+    filter: grayscale(50%);
 }
